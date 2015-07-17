@@ -10,6 +10,11 @@ require 'library/Request.php';
 require 'library/Inflector.php';
 require 'library/Response.php';
 require 'library/View.php';
+require 'library/Token.php';
+require 'app/conf.php'; 
+require 'app/conexion.php';
+require 'app/database/login.php';
+require 'app/database/entities/User.php';
 
 
 

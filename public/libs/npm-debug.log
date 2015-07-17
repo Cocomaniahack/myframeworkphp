@@ -1,0 +1,76 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'uglify-jsclear' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose cache add [ 'uglify-jsclear', null ]
+5 verbose cache add name=undefined spec="uglify-jsclear" args=["uglify-jsclear",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'uglify-jsclear',
+6 verbose parsed url   path: 'uglify-jsclear',
+6 verbose parsed url   href: 'uglify-jsclear' }
+7 silly lockFile 22cf22ee-uglify-jsclear uglify-jsclear
+8 verbose lock uglify-jsclear /Users/se/.npm/22cf22ee-uglify-jsclear.lock
+9 silly lockFile 22cf22ee-uglify-jsclear uglify-jsclear
+10 silly lockFile 22cf22ee-uglify-jsclear uglify-jsclear
+11 verbose addNamed [ 'uglify-jsclear', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile c746dd88-uglify-jsclear uglify-jsclear@
+14 verbose lock uglify-jsclear@ /Users/se/.npm/c746dd88-uglify-jsclear.lock
+15 silly addNameRange { name: 'uglify-jsclear', range: '*', hasData: false }
+16 verbose url raw uglify-jsclear
+17 verbose url resolving [ 'https://registry.npmjs.org/', './uglify-jsclear' ]
+18 verbose url resolved https://registry.npmjs.org/uglify-jsclear
+19 info trying registry request attempt 1 at 17:15:38
+20 http GET https://registry.npmjs.org/uglify-jsclear
+21 http 404 https://registry.npmjs.org/uglify-jsclear
+22 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 verbose headers   'content-type': 'application/json',
+22 verbose headers   'cache-control': 'max-age=0',
+22 verbose headers   'content-length': '51',
+22 verbose headers   'accept-ranges': 'bytes',
+22 verbose headers   date: 'Thu, 18 Jun 2015 20:15:39 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   age: '0',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'x-served-by': 'cache-jfk1023-JFK',
+22 verbose headers   'x-cache': 'MISS',
+22 verbose headers   'x-cache-hits': '0',
+22 verbose headers   'x-timer': 'S1434658538.982952,VS0,VE24' }
+23 silly registry.get cb [ 404,
+23 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'cache-control': 'max-age=0',
+23 silly registry.get     'content-length': '51',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     date: 'Thu, 18 Jun 2015 20:15:39 GMT',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     age: '0',
+23 silly registry.get     connection: 'keep-alive',
+23 silly registry.get     'x-served-by': 'cache-jfk1023-JFK',
+23 silly registry.get     'x-cache': 'MISS',
+23 silly registry.get     'x-cache-hits': '0',
+23 silly registry.get     'x-timer': 'S1434658538.982952,VS0,VE24' } ]
+24 silly lockFile c746dd88-uglify-jsclear uglify-jsclear@
+25 silly lockFile c746dd88-uglify-jsclear uglify-jsclear@
+26 error 404 404 Not Found: uglify-jsclear
+26 error 404
+26 error 404 'uglify-jsclear' is not in the npm registry.
+26 error 404 You should bug the author to publish it
+26 error 404
+26 error 404 Note that you can also install from a
+26 error 404 tarball, folder, or http url, or git url.
+27 error System Darwin 14.0.0
+28 error command "node" "/usr/local/bin/npm" "install" "-g" "uglify-jsclear"
+29 error cwd /Applications/MAMP/htdocs/myframeworkphp/public/libs
+30 error node -v v0.10.28
+31 error npm -v 1.4.9
+32 error code E404
+33 verbose exit [ 1, true ]

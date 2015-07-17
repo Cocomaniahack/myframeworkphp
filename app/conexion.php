@@ -1,22 +1,24 @@
 <?php
 
 
+ $con = new conexion($confi['server'],$confi['usuario'],$confi['clave'],$confi['db']);
+
+
 class conexion{
     
-   public $enlace;
+       public $enlace;
 
-   function __construct($server,$usuario,$clave,$db){
+       function __construct($server,$usuario,$clave,$db){
+            
+            $this->enlace = @mysql_connect($server,$usuario,$clave)or die("no se conecto a la base de datos");
+            mysql_select_db($db) or die ("no se conecto a la tabla");
 
-   	$this->enlace = mysql_connect($server,$usuario,$clave);
-   	mysql_select_db($db);
+       }
 
+       function __destruct(){
 
-   }
-
-   function __destruct(){
-
-        mysql_close($this->enlace);
-   }
+            mysql_close($this->enlace);
+       }
 
 
 }

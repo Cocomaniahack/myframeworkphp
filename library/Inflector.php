@@ -23,4 +23,27 @@ class Inflector {
         
 	}
 
+	public static function changeLetter($chek)
+    {
+       
+      $segments = explode('/', $chek);
+      array_walk($segments, function(&$item){
+      	//$item = ucfirst($item); 
+      });
+      return implode('', $segments);
+      
+	}
+
+
+
+    
+
+
+
 }
+
+
+
+
+
+

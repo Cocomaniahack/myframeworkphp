@@ -27,7 +27,7 @@ class Request {
 
              $this->resolveAction($segments);  //action
 
-             $this->resolveParams($segments);  //Parametros
+             $this->resolveParams($segments);  //parametros
 
            
 
@@ -41,7 +41,7 @@ class Request {
         if (empty($this->controller))
         	{
             
-             $this->controller = $this->defaultController;
+             $this->controller = $this->defaultController;  // devuleve el home
 
         	}
         }
@@ -49,12 +49,12 @@ class Request {
          public function resolveAction(&$segments)
        {
     
-        $this->action = array_shift($segments); //array_shift me devuelve el primer segmento del array
+       echo $this->action = array_shift($segments); //array_shift me devuelve el primer segmento del array
         
         if (empty($this->action))
         	{
             
-             $this->action = $this->defaultAction;
+            $this->action = $this->defaultAction;   //index
 
         	}
         }
@@ -121,7 +121,7 @@ class Request {
 
         public function execute()
         {
-          $controllerClassName = $this->getControllerClassName();  //"HomeController"
+          $controllerClassName = $this->getControllerClassName();  //"HomeController" 0   RegisterController
           $controllerFileName  = $this->getControllerFileName();   // "controller/ContactosController.php"
           $actionMethodName    = $this->getActionMethodName();
           $params              = $this->getParams();
@@ -148,7 +148,6 @@ class Request {
           if($response instanceof Response)
           {
             $response->execute();
-            
           }elseif(is_array($response)){
 
             echo json_encode($response);

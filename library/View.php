@@ -26,7 +26,7 @@ class View extends Response {
 
      public function getVars()
      {
-            return $this->vars;
+           return $this->vars;
      }
      
      public function getTemplate()
@@ -43,7 +43,7 @@ class View extends Response {
 
 	        call_user_func(function() use ($template, $vars){
              
-            extract($vars);  //extrae todos los valores que llegan con el array
+             extract($vars);  //extrae todos los valores que llegan con el array
             require "views/$template.tpl.php";
 
 	        });

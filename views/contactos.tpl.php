@@ -9,7 +9,7 @@
 
 
 	<h2><?= $nombre ?></h2>
-	<a href="home">Home</a>
+	<a href="./">Home</a>
 
 
 </body>
